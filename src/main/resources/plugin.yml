@@ -1,0 +1,15 @@
+name: OggyCommands
+version: '${project.version}'
+main: com.oggy.oggycommands.OggyCommands
+api-version: '1.21'
+description: Area-restricted /mvtp and survival-only combat log
+commands:
+  oggycommand:
+    description: OggyCommands main command
+    usage: /oggycommand <wand|mvtp>
+    aliases: [oggycommands, oc]
+    permission: oggycommands.admin
+permissions:
+  oggycommands.admin:
+    description: Use /oggycommand and the selection wand
+    default: op

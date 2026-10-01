@@ -1,0 +1,28 @@
+# ---------- MVTP restriction ----------
+# Commands that are only allowed while standing inside an allowed area.
+# Write them without the slash, lowercase.
+restricted-commands:
+  - mvtp
+  - mv tp
+  - mvteleport
+  - mv teleport
+
+# ---------- Combat log ----------
+combat-log:
+  enabled: true
+  world: survival        # only this world (whole world) has combat log
+  seconds: 15            # how long the combat tag lasts after a hit
+  kill-on-logout: true   # player dies (drops items) if they quit while tagged
+  # Commands that still work while in combat (no slash, lowercase).
+  # Everything else is blocked during combat. Add your login plugin's commands here.
+  allowed-commands:
+    - login
+    - l
+    - log
+    - register
+    - reg
+    - changepassword
+    - cp
+
+# Saved areas (managed by /oggycommand mvtp allow, you don't need to edit this)
+regions: []
